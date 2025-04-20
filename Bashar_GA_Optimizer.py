@@ -39,7 +39,7 @@ import copy
 from sklearn.preprocessing import MinMaxScaler
 random.seed(1) #change it each run
 
-datadir = '/content/sample_data/A_Bashar_Khawaldeh_N0TD+TD+R+NR-+'
+datadir = '/content/sample_data/DataSet'
 columns = ['center', 'left', 'right', 'steering', 'throttle', 'reverse', 'speed']
 data= pd.read_csv(os.path.join (datadir, 'driving_log.csv'), names = columns)
 #pd.set_option('display.max_colwidth', -1) # make the table shows all data
