@@ -3,8 +3,6 @@
 
 !apt install unzip
 
-from google.colab import drive
-
 !unzip /content/Dataset -d /content/sample_data
 
 !pip3 install imgaug # first setp of creating image data generator
@@ -33,7 +31,7 @@ import copy
 from sklearn.preprocessing import MinMaxScaler
 random.seed(1) #change it each run
 
-datadir = '/content/sample_data/DataSet'
+datadir = '/content/sample_data/Dataset'
 columns = ['center', 'left', 'right', 'steering', 'throttle', 'reverse', 'speed']
 data= pd.read_csv(os.path.join (datadir, 'driving_log.csv'), names = columns)
 #pd.set_option('display.max_colwidth', -1) # make the table shows all data
